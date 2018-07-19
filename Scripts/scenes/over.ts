@@ -29,8 +29,8 @@ module scenes {
         //Initialize game variables and objects
         public Start(): void {
             this._ocean = new objects.Ocean();
-            this._overLabel = new objects.Label("Game Over", "60px", "dock51", "#FFFF00", 320, 140, true);
-            this._resetButton = new objects.Button( "resetButton", 320, 400);
+            this._overLabel = new objects.Label("Game Over", "60px", "Dock51", "#FFFF00", 320, 140, true);
+            this._resetButton = new objects.Button( "restartButton", 320, 340);
             this._scoreboard = new managers.ScoreBoard();
 
             this.Main();
@@ -46,7 +46,7 @@ module scenes {
              //add a ocean 
              this.addChild(this._ocean);
             this.addChild(this._overLabel);//add play label to the scene
-            //this.addChild(this._highScoreLabel);
+            
             this.addChild(this._resetButton);//add back button
             
             this.addChild(this._scoreboard.HighScoreLabel);

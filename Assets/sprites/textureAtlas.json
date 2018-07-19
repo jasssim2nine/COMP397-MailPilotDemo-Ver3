@@ -7,26 +7,46 @@
 "framerate": 20,
 "frames": [
     [1, 1, 226, 178, 0, 0, 0],
-    [1, 181, 62, 62, 0, 0, 0],
-    [65, 181, 62, 51, 0, -3, -9],
-    [129, 181, 62, 51, 0, -3, -9],
-    [193, 181, 62, 51, 0, -3, -9],
-    [1, 245, 200, 60, 0, 0, 0],
-    [1, 307, 200, 60, 0, 0, 0]
+    [229, 1, 44, 40, 0, 0, 0],
+    [275, 1, 44, 40, 0, 0, 0],
+    [321, 1, 44, 40, 0, 0, 0],
+    [367, 1, 44, 40, 0, 0, 0],
+    [413, 1, 44, 40, 0, 0, 0],
+    [459, 1, 44, 40, 0, 0, 0],
+    [1, 181, 44, 40, 0, 0, 0],
+    [47, 181, 44, 40, 0, 0, 0],
+    [93, 181, 44, 40, 0, 0, 0],
+    [139, 181, 44, 40, 0, 0, 0],
+    [185, 181, 62, 63, 0, 0, 0],
+    [249, 181, 65, 65, 0, 0, 0],
+    [316, 181, 65, 65, 0, 0, 0],
+    [383, 181, 65, 65, 0, 0, 0],
+    [1, 248, 200, 60, 0, 0, 0],
+    [203, 248, 200, 60, 0, 0, 0]
 ],
 
 "animations": {
     "cloud": { "frames": [0] },
-    "island": { "frames": [1] },
-    "plane1": { "frames": [2] },
-    "plane2": { "frames": [3] },
-    "plane3": { "frames": [4] },
-    "restartButton": { "frames": [5] },
-    "startButton": { "frames": [6] }
+    "coin01": { "frames": [1] },
+    "coin02": { "frames": [2] },
+    "coin03": { "frames": [3] },
+    "coin04": { "frames": [4] },
+    "coin05": { "frames": [5] },
+    "coin06": { "frames": [6] },
+    "coin07": { "frames": [7] },
+    "coin08": { "frames": [8] },
+    "coin09": { "frames": [9] },
+    "coin10": { "frames": [10] },
+    "island": { "frames": [11] },
+    "plane1": { "frames": [12] },
+    "plane2": { "frames": [13] },
+    "plane3": { "frames": [14] },
+    "restartButton": { "frames": [15] },
+    "startButton": { "frames": [16] }
 },
 
 "texturepacker": [
-        "SmartUpdateHash: $TexturePacker:SmartUpdate:19e79bbd4263db28aa8156407ab18e08:6b71083ebc973b275cda910c3487b25c:2b5604bc88faefd55ddac16e9bce1532$",
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:da67c409d68eb32b9fd60c3549af4267:7111c800fa16aee65b29c4bcabe97934:2b5604bc88faefd55ddac16e9bce1532$",
         "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
 ]
 

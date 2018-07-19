@@ -1,16 +1,13 @@
 @font-face {
-    font-family: 'dock51';
+    font-family: 'Dock51';
     src: url('./Assets/fonts/dock51.woff2') format('woff2'),
-         url('./Assets/fonts/dock51.woff') format('woff'),
-         url('./Assets/fonts/Dock51.ttf') format("truetype");
+         url('./Assets/fonts/dock51.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-}
-
-
-
-
-#canvas {
-    border: 1px black dotted;
-}
+  
+  }
+  
+  
+  #canvas {
+    border: 1px black dotted
+  }
