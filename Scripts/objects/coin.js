@@ -25,8 +25,12 @@ var objects;
         Coin.prototype.Start = function () {
         };
         Coin.prototype.Update = function () {
+            this.CheckBounds();
         };
-        Coin.prototype.Reset = function () {
+        Coin.prototype.CheckBounds = function () {
+            if (this.y > (480 + this.height)) {
+                this.alpha = 1;
+            }
         };
         return Coin;
     }(objects.GameObject));

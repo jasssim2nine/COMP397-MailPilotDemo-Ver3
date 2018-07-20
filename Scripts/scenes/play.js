@@ -51,8 +51,8 @@ var scenes;
             this._coin.y = this._island.y;
             this._coin.Update();
             this._island.Update();
-            //check collision between plane and island
-            managers.Collision.Check(this._plane, this._island);
+            //check collision between plane and coin
+            managers.Collision.Check(this._plane, this._coin);
             this._clouds.forEach(function (cloud) {
                 cloud.Update();
                 //check collision between plane and current cloud 
