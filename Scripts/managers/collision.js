@@ -29,7 +29,7 @@ var managers;
                             }
                             break;
                         case "cloud":
-                            createjs.Sound.play("thunder");
+                            createjs.Sound.play("explosion");
                             managers.Game.scoreBoard.Lives -= 1;
                             var explosion = new objects.Explosion;
                             explosion.x = object1.x;

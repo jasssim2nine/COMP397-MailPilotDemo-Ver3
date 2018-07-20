@@ -33,7 +33,7 @@ module managers{
                 }
                     break;
                     case "cloud":
-                    createjs.Sound.play("thunder");
+                    createjs.Sound.play("explosion");
                     managers.Game.scoreBoard.Lives -= 1;
 
                     let explosion = new objects.Explosion;
