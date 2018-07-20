@@ -9,6 +9,7 @@ module scenes {
             private _scoreBoard: managers.ScoreBoard;
 
             private _engineSound :  createjs.AbstractSoundInstance;
+            private _coin: objects.Coin;
 
         // Public Properties
 
@@ -29,6 +30,7 @@ module scenes {
         public Start(): void {
                this._ocean = new objects.Ocean();
                this._plane = new objects.Plane();
+               this._coin = new objects.Coin();
                this._island = new objects.Island();
               //instantiate the cloud array
               this._clouds = new Array<objects.Cloud>();
@@ -59,6 +61,9 @@ module scenes {
 
         this._ocean.Update();
         this._plane.Update();
+        this._coin.x = this._island.x;
+        this._coin.y = this._island.y;
+        this._coin.Update();
         this._island.Update();
         //check collision between plane and island
         managers.Collision.Check(this._plane, this._island);
@@ -80,8 +85,11 @@ module scenes {
         public Main(): void {
             //add ocean to the scene
             this.addChild(this._ocean);
+            
             //add island to the scene
             this.addChild(this._island);
+            //add coin to the scene
+            this.addChild(this._coin);
             //add plane to the scene
             this.addChild(this._plane);
             //add cloud to the scene
