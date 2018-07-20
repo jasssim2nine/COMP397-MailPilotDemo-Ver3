@@ -41,8 +41,10 @@
             [266, 248, 65, 65, 0, 0, 0],
             [333, 248, 65, 65, 0, 0, 0],
             [400, 248, 65, 65, 0, 0, 0],
-            [1, 315, 200, 60, 0, 0, 0],
-            [203, 315, 200, 60, 0, 0, 0]
+            [1, 315, 65, 65, 0, 0, 0],
+            [68, 315, 65, 65, 0, 0, 0],
+            [135, 315, 200, 60, 0, 0, 0],
+            [1, 382, 200, 60, 0, 0, 0]
         ],
         "animations": {
             "cloud": { "frames": [0] },
@@ -54,9 +56,11 @@
             "plane": { "frames": [19, 20, 21],
                 "speed": 0.5
             },
-            "restartButton": { "frames": [22] },
-            "startButton": { "frames": [23] }
-        },
+            "planeflash": { "frames": [22, 23, 22, 23, 22, 23],
+                "speed": 0.08 },
+            "restartButton": { "frames": [24] },
+            "startButton": { "frames": [25] },
+        }
     };
     assetManifest = [
         { id: "textureAtlas", src: "./Assets/sprites/textureAtlas.png" },
