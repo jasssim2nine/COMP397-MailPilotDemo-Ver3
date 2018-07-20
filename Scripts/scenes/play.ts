@@ -48,6 +48,8 @@ module scenes {
               this._engineSound.loop = -1;//play engine sound for ever
               this._engineSound.volume =0.3;
 
+              
+
               this._scoreBoard = new managers.ScoreBoard();
               managers.Game.scoreBoard = this._scoreBoard;
 

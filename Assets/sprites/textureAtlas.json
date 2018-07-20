@@ -17,12 +17,19 @@
     [47, 181, 44, 40, 0, 0, 0],
     [93, 181, 44, 40, 0, 0, 0],
     [139, 181, 44, 40, 0, 0, 0],
-    [185, 181, 62, 63, 0, 0, 0],
-    [249, 181, 65, 65, 0, 0, 0],
-    [316, 181, 65, 65, 0, 0, 0],
-    [383, 181, 65, 65, 0, 0, 0],
-    [1, 248, 200, 60, 0, 0, 0],
-    [203, 248, 200, 60, 0, 0, 0]
+    [185, 181, 65, 65, 0, 0, 0],
+    [252, 181, 65, 65, 0, 0, 0],
+    [319, 181, 65, 65, 0, 0, 0],
+    [386, 181, 65, 65, 0, 0, 0],
+    [1, 248, 65, 65, 0, 0, 0],
+    [68, 248, 65, 65, 0, 0, 0],
+    [135, 248, 65, 65, 0, 0, 0],
+    [202, 248, 62, 63, 0, 0, 0],
+    [266, 248, 65, 65, 0, 0, 0],
+    [333, 248, 65, 65, 0, 0, 0],
+    [400, 248, 65, 65, 0, 0, 0],
+    [1, 315, 200, 60, 0, 0, 0],
+    [203, 315, 200, 60, 0, 0, 0]
 ],
 
 "animations": {
@@ -37,16 +44,23 @@
     "coin08": { "frames": [8] },
     "coin09": { "frames": [9] },
     "coin10": { "frames": [10] },
-    "island": { "frames": [11] },
-    "plane1": { "frames": [12] },
-    "plane2": { "frames": [13] },
-    "plane3": { "frames": [14] },
-    "restartButton": { "frames": [15] },
-    "startButton": { "frames": [16] }
+    "explosion1": { "frames": [11] },
+    "explosion2": { "frames": [12] },
+    "explosion3": { "frames": [13] },
+    "explosion4": { "frames": [14] },
+    "explosion5": { "frames": [15] },
+    "explosion6": { "frames": [16] },
+    "explosion7": { "frames": [17] },
+    "island": { "frames": [18] },
+    "plane1": { "frames": [19] },
+    "plane2": { "frames": [20] },
+    "plane3": { "frames": [21] },
+    "restartButton": { "frames": [22] },
+    "startButton": { "frames": [23] }
 },
 
 "texturepacker": [
-        "SmartUpdateHash: $TexturePacker:SmartUpdate:da67c409d68eb32b9fd60c3549af4267:7111c800fa16aee65b29c4bcabe97934:2b5604bc88faefd55ddac16e9bce1532$",
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:47904b3e637921d19e068dd0522ff02d:c40ca26597165e7b93e859229e2d424a:2b5604bc88faefd55ddac16e9bce1532$",
         "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
 ]
 
