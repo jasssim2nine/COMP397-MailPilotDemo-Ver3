@@ -45,6 +45,7 @@ var scenes;
         //check every frame
         PlayScene.prototype.Update = function () {
             var _this = this;
+            console.info("Game objects " + this.numChildren);
             this._ocean.Update();
             this._plane.Update();
             this._coin.x = this._island.x;

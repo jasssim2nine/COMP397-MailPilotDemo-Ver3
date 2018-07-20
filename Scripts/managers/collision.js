@@ -31,6 +31,10 @@ var managers;
                         case "cloud":
                             createjs.Sound.play("thunder");
                             managers.Game.scoreBoard.Lives -= 1;
+                            var explosion = new objects.Explosion;
+                            explosion.x = object1.x;
+                            explosion.y = object1.y;
+                            managers.Game.currentSceneObject.addChild(explosion);
                             break;
                     }
                 }

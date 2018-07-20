@@ -61,6 +61,8 @@ module scenes {
             //check every frame
         public Update() {
 
+            console.info("Game objects " + this.numChildren);
+
         this._ocean.Update();
         this._plane.Update();
 

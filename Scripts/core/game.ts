@@ -159,6 +159,7 @@
             break;
         }
         currentState = managers.Game.currentScene;
+        managers.Game.currentSceneObject = currentScene;
         stage.addChild(currentScene);
 
     }
