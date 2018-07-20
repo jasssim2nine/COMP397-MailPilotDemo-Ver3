@@ -57,6 +57,7 @@
         { id: "thunder", src: "./Assets/audio/thunder.ogg" },
         { id: "yay", src: "./Assets/audio/yay.ogg" },
         { id: "coin", src: "./Assets/audio/coin.wav" },
+        { id: "life", src: "./Assets/audio/life.wav" },
     ];
     //preloads assets
     function Init() {
