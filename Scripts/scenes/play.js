@@ -12,7 +12,6 @@ var scenes;
 (function (scenes) {
     var PlayScene = /** @class */ (function (_super) {
         __extends(PlayScene, _super);
-        // Public Properties
         //Constructor
         function PlayScene() {
             var _this = _super.call(this) || this;
@@ -24,6 +23,8 @@ var scenes;
         //Initialize game variables and objects
         PlayScene.prototype.Start = function () {
             this._ocean = new objects.Ocean();
+            this.planeFlash = new objects.PlaneFlash();
+            this.planeFlash.alpha = 0;
             this._plane = new objects.Plane();
             this._coin = new objects.Coin();
             this._island = new objects.Island();
@@ -48,6 +49,7 @@ var scenes;
             console.info("Game objects " + this.numChildren);
             this._ocean.Update();
             this._plane.Update();
+            this.planeFlash.Update();
             this._coin.x = this._island.x;
             this._coin.y = this._island.y;
             this._coin.Update();
@@ -75,6 +77,7 @@ var scenes;
             this.addChild(this._coin);
             //add plane to the scene
             this.addChild(this._plane);
+            this.addChild(this.planeFlash);
             //add cloud to the scene
             this._clouds.forEach(function (cloud) {
                 _this.addChild(cloud);
