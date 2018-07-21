@@ -1,4 +1,4 @@
-module object{
+module objects{
     export class PlaneFlash extends objects.GameObject{
 
         //private instance variables

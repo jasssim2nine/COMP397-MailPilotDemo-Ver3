@@ -12,7 +12,6 @@ var objects;
 (function (objects) {
     var Plane = /** @class */ (function (_super) {
         __extends(Plane, _super);
-        //Private Instance Variables
         // Constructor
         function Plane() {
             var _this = _super.call(this, "plane") || this;
@@ -20,9 +19,17 @@ var objects;
             return _this;
         }
         //Private Methods
+        Plane.prototype._animationEnded = function () {
+            this.alpha = 1;
+            this.planeFlash.alpha = 0;
+        };
         //public Methods
         //Initializes variables and set speed
         Plane.prototype.Start = function () {
+            this.planeFlash = new objects.PlaneFlash;
+            this.planeFlash.alpha = 0;
+            this.planeFlash.on("animationend", this._animationEnded.bind(this), false);
+            managers.Game.currentSceneObject.addChild(this.planeFlash);
             this.x = 320;
             this.y = 430;
         };
@@ -41,6 +48,8 @@ var objects;
             if (managers.Game.keyBoardManager.moveRight) {
                 this.x += 5;
             }
+            this.planeFlash.x = this.x;
+            this.planeFlash.y = this.y;
         };
         Plane.prototype.CheckBounds = function () {
             //right boundary

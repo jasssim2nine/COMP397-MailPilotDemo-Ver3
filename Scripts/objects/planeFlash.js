@@ -8,8 +8,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var object;
-(function (object) {
+var objects;
+(function (objects) {
     var PlaneFlash = /** @class */ (function (_super) {
         __extends(PlaneFlash, _super);
         //private instance variables
@@ -26,6 +26,6 @@ var object;
         };
         return PlaneFlash;
     }(objects.GameObject));
-    object.PlaneFlash = PlaneFlash;
-})(object || (object = {}));
+    objects.PlaneFlash = PlaneFlash;
+})(objects || (objects = {}));
 //# sourceMappingURL=planeFlash.js.map

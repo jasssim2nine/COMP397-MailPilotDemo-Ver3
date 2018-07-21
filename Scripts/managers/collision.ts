@@ -33,6 +33,8 @@ module managers{
                 }
                     break;
                     case "cloud":
+                    if(object1.alpha != 0)
+                    {
                     createjs.Sound.play("explosion");
                     managers.Game.scoreBoard.Lives -= 1;
 
@@ -40,7 +42,14 @@ module managers{
                     explosion.x = object1.x;
                     explosion.y = object1.y;
                     managers.Game.currentSceneObject.addChild(explosion);
+                    object1.alpha = 0;
+
+                    managers.Game.plane.planeFlash.alpha = 1;
+                    managers.Game.plane.planeFlash.gotoAndPlay("planeflash");
+
+                    }
                     break;
+                    
                 }
             }
                 

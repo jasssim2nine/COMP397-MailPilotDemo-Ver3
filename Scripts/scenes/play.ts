@@ -3,6 +3,7 @@ module scenes {
         // Private Instance Variables
             private _ocean: objects.Ocean;
             private _plane : objects.Plane;
+            
             private _island : objects.Island;
             private _clouds:  objects.Cloud[];
             private _cloudNum : number;
@@ -12,7 +13,7 @@ module scenes {
             private _coin: objects.Coin;
 
         // Public Properties
-        public planeFlash : objects.PlaneFlash;
+       
 
         //Constructor
         constructor() {
@@ -29,9 +30,9 @@ module scenes {
         //Initialize game variables and objects
         public Start(): void {
                this._ocean = new objects.Ocean();
-               this.planeFlash = new objects.PlaneFlash();
-               this.planeFlash.alpha = 0;
+               
                this._plane = new objects.Plane();
+               managers.Game.plane = this._plane;
                this._coin = new objects.Coin();
                this._island = new objects.Island();
               //instantiate the cloud array
@@ -67,7 +68,8 @@ module scenes {
 
         this._ocean.Update();
         this._plane.Update();
-        this.planeFlash.Update();
+
+        
 
         this._coin.x = this._island.x;
         this._coin.y = this._island.y;
@@ -101,8 +103,9 @@ module scenes {
             this.addChild(this._coin);
             //add plane to the scene
             this.addChild(this._plane);
+            this.addChild(this._plane.planeFlash);
 
-            this.addChild(this.planeFlash);
+            
             //add cloud to the scene
            this._clouds.forEach(cloud => 
         {

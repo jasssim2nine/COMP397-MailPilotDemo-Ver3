@@ -226,6 +226,8 @@
             <key type="filename">../images/plane1.png</key>
             <key type="filename">../images/plane2.png</key>
             <key type="filename">../images/plane3.png</key>
+            <key type="filename">../images/planeflash1.png</key>
+            <key type="filename">../images/planeflash2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -292,6 +294,8 @@
             <filename>../images/explosion1.png</filename>
             <filename>../images/explosion2.png</filename>
             <filename>../images/explosion3.png</filename>
+            <filename>../images/planeflash1.png</filename>
+            <filename>../images/planeflash2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

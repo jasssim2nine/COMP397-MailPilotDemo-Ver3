@@ -29,12 +29,17 @@ var managers;
                             }
                             break;
                         case "cloud":
-                            createjs.Sound.play("explosion");
-                            managers.Game.scoreBoard.Lives -= 1;
-                            var explosion = new objects.Explosion;
-                            explosion.x = object1.x;
-                            explosion.y = object1.y;
-                            managers.Game.currentSceneObject.addChild(explosion);
+                            if (object1.alpha != 0) {
+                                createjs.Sound.play("explosion");
+                                managers.Game.scoreBoard.Lives -= 1;
+                                var explosion = new objects.Explosion;
+                                explosion.x = object1.x;
+                                explosion.y = object1.y;
+                                managers.Game.currentSceneObject.addChild(explosion);
+                                object1.alpha = 0;
+                                managers.Game.plane.planeFlash.alpha = 1;
+                                managers.Game.plane.planeFlash.gotoAndPlay("planeflash");
+                            }
                             break;
                     }
                 }

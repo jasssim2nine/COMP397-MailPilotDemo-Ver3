@@ -2,7 +2,11 @@ module objects{
     export class Plane extends objects.GameObject{
     
         //Private Instance Variables
-            
+                
+            //public properties
+
+
+        public planeFlash : objects.PlaneFlash;
 
 
 
@@ -15,11 +19,24 @@ module objects{
 
             //Private Methods
             
+            private _animationEnded():void{
+                this.alpha = 1;
+                this.planeFlash.alpha = 0;
+
+
+            }
 
             //public Methods
 
             //Initializes variables and set speed
             public Start():void{
+                this.planeFlash = new objects.PlaneFlash;
+                this.planeFlash.alpha = 0;
+
+                this.planeFlash.on("animationend", this._animationEnded.bind(this),false);
+                managers.Game.currentSceneObject.addChild(this.planeFlash);
+
+
                 this.x = 320;
                 this.y = 430;
                
@@ -43,6 +60,8 @@ module objects{
                 if(managers.Game.keyBoardManager.moveRight){
                     this.x += 5;
                 }
+                this.planeFlash.x = this.x;
+                this.planeFlash.y = this.y;
                 
             }
 
